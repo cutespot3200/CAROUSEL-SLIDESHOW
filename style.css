@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper{
+    width: 80%;
+    height: fit-content;
+}
+.swiper-slide img{
+    width: 100%;
+}
+img{
+    height: 90vh;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-box-reflect: below;
+}
+img:hover {
+    opacity: 0.7;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: gray; 
+    opacity: 0;  
+    
+}
+
+.swiper .swiper-button-prev:hover, .swiper .swiper-button-next:hover{
+    color: crimson;
+    opacity: 2;
+}
+
+
+
+.swiper .swiper-pagination-bullet-active{
+    background: crimson;
+}
+
+
+
